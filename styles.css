@@ -1,26 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: #b8cea7;
+  background: #f7f8f6;
   font-family: "Quicksand", sans-serif;
 }
 
 .container {
-  width: 75%;
+  width: 80%;
   max-width: 1000px;
   margin: 0 auto;
 }
-
 header {
   background: #ce389c;
-  color: #ebebd3;
+  color: white;
   padding: 2em 0;
   position: relative;
   line-height: 0.5;
-}
-
-header::after {
-  content: "";
-  clear: both;
-  display: block;
 }
 
 .logo {
@@ -125,6 +122,16 @@ header::after {
 
 .open .hamburger::after {
   transform: translateY(-3px) rotate(-90deg);
+}
+
+.content {
+  height: 200vh;
+  background-image: url(//unsplash.it/2000/2000);
+  background-color: rgb(240, 233, 233);
+  background-blend-mode: multiply;
+  background-size: cover;
+  display: grid;
+  place-items: center;
 }
 
 @media (min-width: 700px) {
